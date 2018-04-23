@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.miwok.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/category_numbers">
+
+                <TextView
+                    android:id="@+id/numbers"
+                    style="@style/CategoryStyle"
+                    android:background="?android:selectableItemBackground"
+                    android:text="@string/category_numbers" />
+            </FrameLayout>
+
+           <FrameLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:background="@color/category_family">
+               <TextView
+                   android:id="@+id/family"
+                   style="@style/CategoryStyle"
+                   android:background="?android:selectableItemBackground"
+                   android:text="@string/category_family" />
+           </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:background="@color/category_colors"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/colors"
+                    style="@style/CategoryStyle"
+                    android:background="?android:selectableItemBackground"
+                    android:text="@string/category_colors" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/category_phrases">
+                <TextView
+                    android:id="@+id/phrases"
+                    style="@style/CategoryStyle"
+                    android:background="?android:selectableItemBackground"
+                    android:text="Phrases" />
+            </FrameLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
